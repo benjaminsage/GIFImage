@@ -3,6 +3,10 @@ import UIKit
 
 public struct GIFImage: UIViewRepresentable {
     let imageName: String
+    
+    public init(imageName: String) {
+        self.imageName = imageName
+    }
 
     public func makeUIView(context: Self.Context) -> UIView {
         let view = UIView()
