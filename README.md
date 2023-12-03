@@ -51,7 +51,7 @@ GIFImage(imageName: "exampleGif")
 Ensure that your GIF file is added to your Xcode project and is included in the target.
 
 ### Customization
-Work in progress.
+*Work in progress.*
 
 ## Example
 Here is a simple example of how to use GIFImage in a SwiftUI view:
