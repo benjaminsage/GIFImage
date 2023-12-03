@@ -1,10 +1,10 @@
 import SwiftUI
 import UIKit
 
-struct GIFImage: UIViewRepresentable {
+public struct GIFImage: UIViewRepresentable {
     let imageName: String
 
-    func makeUIView(context: Self.Context) -> UIView {
+    public func makeUIView(context: Self.Context) -> UIView {
         let view = UIView()
 
         let imageView = UIImageView()
@@ -23,13 +23,13 @@ struct GIFImage: UIViewRepresentable {
         return view
     }
 
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<GIFImage>) {
+    public func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<GIFImage>) {
         // Update the view if necessary.
     }
 }
 
 extension UIImage {
-    static func gif(name: String) -> UIImage? {
+    fileprivate static func gif(name: String) -> UIImage? {
         guard let bundleURL = Bundle.main.url(forResource: name, withExtension: "gif"),
               let imageData = try? Data(contentsOf: bundleURL) else {
             return nil
