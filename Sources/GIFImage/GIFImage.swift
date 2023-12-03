@@ -31,13 +31,3 @@ public struct GIFImage: UIViewRepresentable {
         // Update the view if necessary.
     }
 }
-
-extension UIImage {
-    fileprivate static func gif(name: String) -> UIImage? {
-        guard let bundleURL = Bundle.main.url(forResource: name, withExtension: "gif"),
-              let imageData = try? Data(contentsOf: bundleURL) else {
-            return nil
-        }
-        return UIImage(data: imageData)
-    }
-}
