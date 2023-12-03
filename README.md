@@ -35,12 +35,18 @@ dependencies: [
 
 ### Importing the Package
 To use GIFImage, import it at the top of your Swift file:
-    import SwiftUI
-    import GIFImage
+
+```swift
+import SwiftUI
+import GIFImage
+```
 
 ### Displaying a GIF
 To display a GIF, simply create a `GIFImage` view and pass the name of your GIF file:
-    GIFImage(imageName: "exampleGif")
+
+```swift
+GIFImage(imageName: "exampleGif")
+```
 
 Ensure that your GIF file is added to your Xcode project and is included in the target.
 
